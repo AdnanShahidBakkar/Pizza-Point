@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Form</title>
+</head>
+<style>
+    td{border-top-left-radius: 5px;
+    border-bottom-width: 2px;
+border-top-right-radius: 5px;}
+    tr{border-top-right-radius: 12px;}
+    th{border-radius: 8px;}
+    table{border-radius: 5px;}
+</style>
+<body>
+    <center>
+    <table border="2px">
+        
+        <!-- <fieldset>
+            <legend>adnan</legend>
+        </fieldset> -->
+        
+        <form action="welcome.html">
+
+        <tr>
+          <th colspan="2"><h2><i>*__Pizza Point__*</i></h2></th>
+    
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td><input type="text" required></td>
+            
+        </tr>
+        <tr>
+            <td rowspan="2">Pizza Topping</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="radio" name="a" id="Vegetarian" required><label for="Vegetarian">Vegetarian</label><br>
+                <input type="radio" name="a" id="Supreme" required><label for="Supreme">Supreme</label><br>
+                <input type="radio" name="a" id="Hawaiian" required><label for="Hawaiian">Hawaiian</label>
+            </td>
+        </tr>
+      
+        <tr>
+            <td>Pizza Sauce</td>
+            <td>
+        <select>
+            <option selected disabled value="Choose Sauce"required>Choose Sauce</option>
+            <option  value="Tomato"required>Tomato</option>
+            <option  value="Chilli Garlic"required>Chilli Garlic</option>
+            <option  value="Garlic Sauce"required>Garlic Sauce</option>
+        </select>
+    </td>     
+    </tr>
+        <tr>
+            <td>Subjects</td>
+            <td>
+                <input type="checkbox" name="B" id="Extra Cheez"><label for="Extra Cheez">Extra Cheez</label>
+                <input type="checkbox" name="B" id="Gluten Free Base"required><label for="Gluten Free Base">Gluten Free Base</label>
+                 
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"> Delivery Instruction<br>
+              <textarea cols="50" rows="4"required></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td align="center" colspan="2"><button type="submit"><b>/_Send My Order_\</b></button>
+            <button type="reset"><b>/_Reset_\</b></button>
+            </td>
+        </tr>
+    </form>
+    </table>
+</center>
+</body>
+</html>
